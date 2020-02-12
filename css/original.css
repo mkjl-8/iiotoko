@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body{
+  width: 100%;
+  font-family: 'abel','poppins',sans-serif;
+  color: #666;
+  box-sizing: border-box;
+}
+
+.pc-header{
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background: #24608c;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-left a{
+  font-size: 22px;
+  color: #f5f5f5;
+  border: solid 2px #f5f5f5;
+  padding: 1px 10px;
+  text-decoration: none;
+}
+.nav-logo{
+  font-size: 22px;
+  color: #f5f5f5;
+  border: solid 2px #f5f5f5;
+  padding: 1px 10px;
+  text-decoration: none;
+}
+.nav-fontsize{
+  font-size: 22px;
+}
+.nav-right{
+  display: flex;
+}
+.nav-fontsize{
+  color: #f5f5f5;
+  font-size: 22px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+.nav-fontsize::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #f5f5f5;;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .5s;
+}
+.nav-fontsize:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+.mein{
+  width: 100%;
+  padding: 180px 0 50px;
+  background-color: #24608c;
+  text-align: center;
+}
+.mein-content{
+  width: 80%;
+  margin:  0 auto;
+}
+.man{
+  width: 560px;
+}
+.man-mob{
+  display: none;
+}
+.title{
+  width: 750px;
+  margin: 0 auto;
+}
+.padding-left30{
+  margin-left: 30px;
+}
+h3{
+  font-size: 2rem;
+}
+.under{
+  border-bottom: 3px solid #24608c;
+}
+.fadein {
+  opacity : 0;
+  transform: translateY(40px);
+  transition: all 1s;
+}
+.typing-box{
+  background: #24608c;
+}
+.typing-text{
+  font-size: 1.4rem;
+  color: #f5f5f5;
+  padding: 0 0 50px;
+  text-align: center;
+  font-weight: bold;
+}
+.typing-text :after {
+  content: '';
+  border-right: 1px solid;
+  animation: flashing 0.4s linear infinite;
+}
+.margin-100{
+  margin-bottom: 100px;
+}
+.profile-contents{
+  width: 100%;
+  margin: 50px auto 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.profile-img{
+  width: 200px;
+  border: 1px solid #24608c;
+  border-radius: 50%;
+}
+.profile-contents p{
+  width: 500px;
+  font-size: 1rem;
+  line-height: 2rem;
+  padding: 0 50px;
+}
+.margin-top{
+  margin-top: 100px;
+}
+.service-box{
+  width: 750px;
+  margin: 60px auto 0;
+  background-color: #24608c;
+  padding: 40px 80px 0;
+  text-align: center;
+}
+.service-img{
+  width: 500px;
+  margin-bottom: 50px;
+}
+.service-text{
+  color: #f5f5f5;
+  font-size: 1.2rem;
+  line-height: 3rem;
+  padding-bottom: 50px;
+}
+.portfolio-box{
+  width: 750px;
+}
+.nomal{
+  font-family: nomal;
+}
+
+#btn {
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+
+#btn li {
+	float: left;
+	margin: 10px;
+	cursor: pointer;
+}
+
+#animationList {
+	overflow: hidden;
+}
+
+#animationList li {
+	width: 220px;
+	height: 220px;
+	padding: 10px;
+	float: left;
+	color: #fff;
+}
+
+#animationList li span {
+	display: block;
+	width: 180px;
+	height: 180px;
+	padding: 20px;
+}
+.contact-box{
+  width: 750px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+.fa-mobile, .fa-envelope, .fa-map-marker-alt {
+  color: #24608c;
+  font-size: 3em;
+  margin: 1rem;
+}
+.info-box{
+  margin-top: 60px;
+}
+.info-box h3{
+  margin-top: 1rem;
+  font-size: 18px;
+  font-weight: normal;
+}
+.input{
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  color: #666;
+  border-bottom: 1px solid #24608c;
+  background: transparent;
+  margin-bottom: 10px;
+  font-size: 16px;
+  height: 45px;
+}
+.text-p-right{
+  text-align: right;
+  margin-bottom: 100px;
+}
+.send{
+  width: 130px;
+  color: #24608c;
+  border: 1px solid #24608c;
+  font-size: 22px;
+  line-height: 2.5rem;
+  border-radius: 3rem;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+i{
+  color: #24608c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes flashing {
+  0% {
+    opacity: 0;
+  }
+}
+
+/*---Media Queries --*/
+@media (max-width: 768px) {
+  .title{
+    width: 100%;
+    margin: 50px auto 0;
+    text-align: center;
+  }
+  .mein{
+    padding: 100px 0 50px;
+  }
+  .man{
+    width: 90%;
+    height: 400px;
+  }
+  .man-mob{
+    display: none;
+  }
+  .profile-contents p {
+    margin-top: 30px;
+  }
+  .service-box{
+    width: 100%;
+    margin: 30px auto 0;
+    padding: 40px 40px 0;
+  }
+  .service-img{
+    width: 90%;
+    height: 300px;
+  }
+  .contact-item {
+    width: 300px;
+    height: auto;
+    margin: 25px 10px 0;
+  }
+  .text-p-right{
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .title{
+    width: 100%;
+    margin: 50px auto 0;
+    text-align: center;
+  }
+  .mein{
+    padding: 100px 0 40px;
+  }
+  .man{
+    display: none;
+  }
+  .man-mob{
+    display: block;
+    width: 100%;
+    height: 380px;
+  }
+  .typing-text {
+    font-size: 1rem;
+    color: #f5f5f5;
+    padding: 0 0 50px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .profile-contents p {
+    margin-top: 30px;
+  }
+  .service-box{
+    width: 100%;
+    margin: 30px auto 0;
+    padding: 40px 40px 0;
+  }
+  .service-img{
+    width: 90%;
+    height: 300px;
+  }
+  .contact-item {
+    width: 300px;
+    height: auto;
+    margin: 25px 10px 0;
+  }
+  .text-p-right{
+    text-align: center;
+  }
+  
+
+
+/*---Firefox Bug Fix --*/
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+

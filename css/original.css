@@ -6,7 +6,14 @@ html, body{
   color: #666;
   box-sizing: border-box;
 }
-
+.text-center{
+  display: block;
+  color: #666;
+}
+.text-center:hover{
+  display: block;
+  color: #666;
+}
 .pc-header{
   position: fixed;
   z-index: 1;
@@ -80,10 +87,11 @@ html, body{
 }
 .title{
   width: 750px;
-  margin: 0 auto;
+  margin: 0 auto 0;
+  padding-top: 120px;
 }
 .padding-left30{
-  margin-left: 30px;
+  margin-left: 120px;
 }
 h3{
   font-size: 2rem;
@@ -112,15 +120,18 @@ h3{
   animation: flashing 0.4s linear infinite;
 }
 .margin-100{
-  margin-bottom: 100px;
+  margin-bottom: 0px;
 }
 .profile-contents{
   width: 100%;
-  margin: 50px auto 80px;
+  margin: 50px auto 0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+}
+.profile-contents a{
+  color: #24608c;
 }
 .profile-img{
   width: 200px;
@@ -128,7 +139,7 @@ h3{
   border-radius: 50%;
 }
 .profile-contents p{
-  width: 500px;
+  width: 600px;
   font-size: 1rem;
   line-height: 2rem;
   padding: 0 50px;
@@ -140,18 +151,31 @@ h3{
   width: 750px;
   margin: 60px auto 0;
   background-color: #24608c;
-  padding: 40px 80px 0;
-  text-align: center;
+  padding: 40px 80px 50px;
 }
 .service-img{
   width: 500px;
-  margin-bottom: 50px;
+  display: block;
+  margin: 0 auto 50px;
 }
 .service-text{
   color: #f5f5f5;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 3rem;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
+}
+.service-text-title{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.service-text-mini{
+  font-size: 1rem;
+  font-weight: 100;
+}
+.p-10{
+  width: 100%;
+  padding: 0 5%;
+  box-sizing: border-box;
 }
 .portfolio-box{
   width: 750px;
@@ -238,32 +262,28 @@ i{
   color: #24608c;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @keyframes flashing {
   0% {
     opacity: 0;
   }
 }
 
+
+
+
+
+
+
+
+
 /*---Media Queries --*/
 @media (max-width: 768px) {
+  .margin-100{
+    margin-bottom: 0;
+  }
   .title{
     width: 100%;
-    margin: 50px auto 0;
+    margin: 0 auto;
     text-align: center;
   }
   .mein{
@@ -298,9 +318,12 @@ i{
   }
 }
 @media (max-width: 576px) {
+  .margin-100{
+    margin-bottom: 0;
+  }
   .title{
     width: 100%;
-    margin: 50px auto 0;
+    margin: 0 auto;
     text-align: center;
   }
   .mein{
@@ -327,11 +350,21 @@ i{
   .service-box{
     width: 100%;
     margin: 30px auto 0;
-    padding: 40px 40px 0;
+    padding: 40px 40px 50px;
   }
   .service-img{
+    display: block;
     width: 90%;
     height: 300px;
+    margin: 0 auto 50px;
+  }
+  .service-text-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .service-text-mini{
+    font-size: .7rem;
+    font-weight: 100;
   }
   .contact-item {
     width: 300px;
@@ -372,3 +405,4 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
 
+}
